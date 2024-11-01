@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Casa Hotel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Ubah warna navbar dan footer */
+    .navbar {
+      background: linear-gradient(to right, #f8a39b, #ffc120); /* Gradient untuk navbar */
+    }
+    .footer {
+      background: linear-gradient(to right, #f8a39b, #ffc120); /* Gradient untuk footer */
+      color: #ecf0f1;
+    }
+    
+    /* Gaya untuk section utama dengan background gambar */
+    .jumbotron {
+      background-image: url('img/hotel1.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    .jumbotron h1, .jumbotron p {
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.938);
+    }
+
+    /* Gaya untuk tombol */
+    .btn-primary {
+      background-color: #ff6a72;
+      border-color: #fc467d;
+    }
+    .btn-primary:hover {
+      background-color: #fd8e8e;
+      border-color: #f87f93;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#home">Mi Casa Hotel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rooms">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section id="home" class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Welcome to Our Hotel</h1>
+      <p class="lead text-muted">Experience luxury and comfort in the heart of the city.</p>
+      <a href="#booking" class="btn btn-primary my-2">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+<section id="rooms" class="container my-5">
+  <h2 class="text-center">Rooms</h2>
+  <p class="text-center">Discover our luxurious rooms designed to provide a comfortable stay.</p>
+  
+  <div class="row">
+    <!-- Room 1 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img src="img/room1.jpeg" class="card-img-top" alt="Deluxe Room">
+        <div class="card-body">
+          <h5 class="card-title">Deluxe Room</h5>
+          <p class="card-text">Spacious room with city view, king-sized bed, and modern amenities.</p>
+          <p class="font-weight-bold">Price: Rp. 2.500.000/night</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room 2 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img src="img/room2.jpeg" class="card-img-top" alt="Superior Room">
+        <div class="card-body">
+          <h5 class="card-title">Superior Room</h5>
+          <p class="card-text">Elegant room with a queen-sized bed and complimentary breakfast.</p>
+          <p class="font-weight-bold">Price: Rp. 1.500.000/night</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Room 3 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img src="img/room3.jpeg" class="card-img-top" alt="Standard Room">
+        <div class="card-body">
+          <h5 class="card-title">Standard Room</h5>
+          <p class="card-text">Comfortable room with all essential amenities and a single bed.</p>
+          <p class="font-weight-bold">Price: Rp. 1.000.000/night</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="container my-5">
+    <h2 class="text-center">Gallery</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="img/galery1.jpeg" class="img-fluid" alt="Room 1">
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="img/galery2.jpeg" class="img-fluid" alt="Room 2">
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <img src="img/galery3.jpeg" class="img-fluid" alt="Room 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form Section -->
+  <section id="booking" class="container my-5">
+    <h2 class="text-center">Book Your Stay</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="checkin">Check-in Date</label>
+        <input type="date" class="form-control" id="checkin" required>
+      </div>
+      <div class="form-group">
+        <label for="checkout">Check-out Date</label>
+        <input type="date" class="form-control" id="checkout" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <input type="number" class="form-control" id="guests" min="1" placeholder="Enter number of guests" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    <p>&copy; 2024 Mi Casa Hotel. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
